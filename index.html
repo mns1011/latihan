@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p id="paragraf">Selamat datang!</p>
+    <input type="text" id="name" name="name" placeholder="Masukan nama anda">
+    <button onclick="kirim()">Kirim</button>
+    
+<script>
+    let name = document.getElementById("name");
+    let paragraf = document.getElementById("paragraf");
+    function kirim(){
+    paragraf.innerText = "Hallo "+name.value ;
+    name.value('')
+}
+</script>
+
+</body>
+</html>
